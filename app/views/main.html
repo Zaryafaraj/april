@@ -1,0 +1,18 @@
+<div class="blog-title">
+  <input type="text" class="blog-title-input" ng-model="title" placeholder="What is the title of your blog ?"/>
+</div>
+<div class="author-title">
+  <h3>By</h3>
+  <input type="text" class="author-title-input" ng-model="author" placeholder="What is your name?"/>
+</div>
+<div class="text-editor">
+  <text-angular-toolbar ng-show="showToolbar"
+                        name="technicalToolbar"
+                        ta-toolbar="[['h1', 'h3'], ['bold','italics','ul', 'quote'], ['ul', 'ol'], ['justifyLeft', 'justifyCenter'], ['insertImage', 'insertLink', 'insertVideo']]"></text-angular-toolbar>
+
+  <div text-angular
+       ng-focus="showToolbar = true"
+       ng-blur="showToolbar = false"
+       ta-target-toolbars="technicalToolbar"
+       ng-model="htmlVariable"></div>
+</div>
