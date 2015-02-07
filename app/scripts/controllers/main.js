@@ -10,4 +10,13 @@
 angular.module('aprilApp')
   .controller('MainCtrl',['$scope', 'Blogs', function ($scope, Blogs) {
 
+        $scope.save = function() {
+            var result = {
+                author: $scope.author,
+                title: $scope.title,
+                blog: $scope.blog
+            }
+
+            Blogs.save(result);
+        }
   }]);
