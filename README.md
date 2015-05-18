@@ -1,8 +1,7 @@
 # april
 
-a simple blogging app for angularjs (zyring.com project)
+a simple blogging app for angularjs
 
-For more info visit http://zyring.com
 
 ![image](http://static.comicvine.com/uploads/original/6/67602/2071128-april1.jpg)
 
